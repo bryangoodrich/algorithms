@@ -1,0 +1,19 @@
+\subsection*{Overview }
+
+This assignment is part of David Fox's C\-I\-S\-P 430 class at American River College (A\-R\-C). The A\-P\-I provides for a doubly linked list (i.\-e., a list that can go forwards and backwards) that drops into a N\-U\-L\-L space either 'before' the first (head) element or 'after' the last element in the list.
+
+Display features are for debugging purposes, and are not designed to be visually appealing. The point is to track possible errors. Future edits (once certain it is finished) may revise that fact.
+
+\subsection*{Motivation }
+
+This project is not designed to try our skill at making excellent lists. On the contrary, it's to make it a convoluted problem that challenges our creativity and force us to deal with odd situations demanded of us by the specifications. All specifications are provided to us in the header file. I contributed two private member functions to facilitate recursive actions for deletion (when destructing list) and for printing (when using public Display function).
+
+The purpose of this assignment is ultimately to respect the specifications, particularly the preconditions and postconditions (see, for example, my custom S\-T\-R\-I\-N\-G class for my own documentation). By understanding just what state of the machine is required beforehand and what state to expect after a function is called, you'll gain a greater respect for how to better manage process flow, A\-P\-I design, and just how best to both validate programs and handle exceptions.
+
+I provided a test main that utilizes the A\-P\-I in a simulation. The breadth of possible test cases goes beyond a static validation file, so hopefully using the simulator will suffice to understand and maybe enjoy the use of a linked list. As mentioned before, after this is turned in, I may revise the display function (call it print, 1st of all).
+
+\subsection*{Extensions }
+
+As this is an A\-P\-I for pedagogical purposes, the use of a typedef for the list content may seem odd. It would be more appropriate to make this a template class to handle any data type. With that said, there are some issues with the current print statement and what typedef is specified. Most importantly, I designed the display to deal with characters, and there may be problems if that is changed. For prototyping purposes, I'm okay with this. For a third time, a revised display function should avoid this issue!
+
+Since this list is not very complex, I do not see any limitations to alternative data types, besides the above issue. For instance, the custom S\-T\-R\-I\-N\-G class in this these C++ A\-P\-I can be added to this and used. For the novice programmer, this is a neat exploration into how powerful object-\/ oriented programming can be. Do try it out. 

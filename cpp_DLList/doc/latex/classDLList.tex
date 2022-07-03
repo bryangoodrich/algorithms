@@ -1,0 +1,250 @@
+\hypertarget{classDLList}{\section{D\-L\-List$<$ T $>$ Class Template Reference}
+\label{classDLList}\index{D\-L\-List$<$ T $>$@{D\-L\-List$<$ T $>$}}
+}
+
+
+A custom doubly-\/linked list implementation.  
+
+
+
+
+{\ttfamily \#include $<$D\-L\-List.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDLList_a5b46ae51c7c8a8d80154116bff60f09f}{D\-L\-List} ()
+\begin{DoxyCompactList}\small\item\em Default List Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classDLList_a09ac7185b3f16e504d8ebb70c45d729f}{$\sim$\-D\-L\-List} ()
+\begin{DoxyCompactList}\small\item\em Default List Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classDLList_a2d99aa2cec84f17993ccdc3c7bca315d}{Is\-Empty} () const 
+\begin{DoxyCompactList}\small\item\em Check List content. \end{DoxyCompactList}\item 
+bool \hyperlink{classDLList_afda4c77170d81dc401f70e4762465d73}{End\-Of\-List} () const 
+\begin{DoxyCompactList}\small\item\em Check cursor status. \end{DoxyCompactList}\item 
+void \hyperlink{classDLList_a3b1136f4a0a80e441d9e3c9ce5e42653}{Head} ()
+\begin{DoxyCompactList}\small\item\em Reset Cursor. \end{DoxyCompactList}\item 
+void \hyperlink{classDLList_abab0ba485a340b9c89b66980b766d6a0}{Next} ()
+\begin{DoxyCompactList}\small\item\em Move cursor forward. \end{DoxyCompactList}\item 
+void \hyperlink{classDLList_ab992a44d9ea1e6d7c4fa5cf9b8810a96}{Previous} ()
+\begin{DoxyCompactList}\small\item\em Move cursor backward. \end{DoxyCompactList}\item 
+T \hyperlink{classDLList_a78be8160baa864edcc73f1eb6f50ba0d}{Item} ()
+\begin{DoxyCompactList}\small\item\em Return data. \end{DoxyCompactList}\item 
+void \hyperlink{classDLList_a41213907b25f11371d7cd3cc64954035}{Delete} ()
+\begin{DoxyCompactList}\small\item\em Delete node. \end{DoxyCompactList}\item 
+void \hyperlink{classDLList_a3060479b9aaece8724c88eadd466fe60}{Insert\-Before} (const T \&item)
+\begin{DoxyCompactList}\small\item\em Insert data before cursor. \end{DoxyCompactList}\item 
+void \hyperlink{classDLList_a65b9b2c39e969a607b4ee375ebd1d36d}{Insert\-After} (const T \&item)
+\begin{DoxyCompactList}\small\item\em Insert data after cursor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$class D\-L\-List$<$ T $>$}
+
+A custom doubly-\/linked list implementation. 
+
+A custom implementation of a doubly-\/linked list aimed at exploring the List data structure and its behavior, entirely for pedagogical purposes.
+
+\begin{DoxyAuthor}{Author}
+Bryan Goodrich 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2013/12/14 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDLList_a5b46ae51c7c8a8d80154116bff60f09f}{\index{D\-L\-List@{D\-L\-List}!D\-L\-List@{D\-L\-List}}
+\index{D\-L\-List@{D\-L\-List}!DLList@{D\-L\-List}}
+\subsubsection[{D\-L\-List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf D\-L\-List}$<$ T $>$\-::{\bf D\-L\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a5b46ae51c7c8a8d80154116bff60f09f}
+
+
+Default List Constructor. 
+
+\begin{DoxyPostcond}{Postcondition}
+The head and cursor are set to N\-U\-L\-L. 
+\end{DoxyPostcond}
+\hypertarget{classDLList_a09ac7185b3f16e504d8ebb70c45d729f}{\index{D\-L\-List@{D\-L\-List}!$\sim$\-D\-L\-List@{$\sim$\-D\-L\-List}}
+\index{$\sim$\-D\-L\-List@{$\sim$\-D\-L\-List}!DLList@{D\-L\-List}}
+\subsubsection[{$\sim$\-D\-L\-List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf D\-L\-List}$<$ T $>$\-::$\sim${\bf D\-L\-List} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a09ac7185b3f16e504d8ebb70c45d729f}
+
+
+Default List Destructor. 
+
+\begin{DoxyPostcond}{Postcondition}
+All list nodes are deleted. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDLList_a41213907b25f11371d7cd3cc64954035}{\index{D\-L\-List@{D\-L\-List}!Delete@{Delete}}
+\index{Delete@{Delete}!DLList@{D\-L\-List}}
+\subsubsection[{Delete}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf D\-L\-List}$<$ T $>$\-::Delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a41213907b25f11371d7cd3cc64954035}
+
+
+Delete node. 
+
+\begin{DoxyPrecond}{Precondition}
+The list is non-\/empty and the cursor is not at the end of list. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The node pointed to by the cursor is deleted after the cursor points to next pointer. If cursor pointed to last item in list, then head and cursor are set to N\-U\-L\-L. 
+\end{DoxyPostcond}
+\hypertarget{classDLList_afda4c77170d81dc401f70e4762465d73}{\index{D\-L\-List@{D\-L\-List}!End\-Of\-List@{End\-Of\-List}}
+\index{End\-Of\-List@{End\-Of\-List}!DLList@{D\-L\-List}}
+\subsubsection[{End\-Of\-List}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf D\-L\-List}$<$ T $>$\-::End\-Of\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDLList_afda4c77170d81dc401f70e4762465d73}
+
+
+Check cursor status. 
+
+\begin{DoxyReturn}{Returns}
+True, if cursor is N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classDLList_a3b1136f4a0a80e441d9e3c9ce5e42653}{\index{D\-L\-List@{D\-L\-List}!Head@{Head}}
+\index{Head@{Head}!DLList@{D\-L\-List}}
+\subsubsection[{Head}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf D\-L\-List}$<$ T $>$\-::Head (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a3b1136f4a0a80e441d9e3c9ce5e42653}
+
+
+Reset Cursor. 
+
+\begin{DoxyPrecond}{Precondition}
+The list is non-\/empty. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The cursor points to head of list. 
+\end{DoxyPostcond}
+\hypertarget{classDLList_a65b9b2c39e969a607b4ee375ebd1d36d}{\index{D\-L\-List@{D\-L\-List}!Insert\-After@{Insert\-After}}
+\index{Insert\-After@{Insert\-After}!DLList@{D\-L\-List}}
+\subsubsection[{Insert\-After}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf D\-L\-List}$<$ T $>$\-::Insert\-After (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a65b9b2c39e969a607b4ee375ebd1d36d}
+
+
+Insert data after cursor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em item} & Data to be stored in list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+If list is empty, item is inserted at head of list. If cursor is at end of list, item is inserted as last item in the list. Otherwise, item is inserted at next pointer of cursor. Cursor then points to inserted item. 
+\end{DoxyPostcond}
+\hypertarget{classDLList_a3060479b9aaece8724c88eadd466fe60}{\index{D\-L\-List@{D\-L\-List}!Insert\-Before@{Insert\-Before}}
+\index{Insert\-Before@{Insert\-Before}!DLList@{D\-L\-List}}
+\subsubsection[{Insert\-Before}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf D\-L\-List}$<$ T $>$\-::Insert\-Before (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a3060479b9aaece8724c88eadd466fe60}
+
+
+Insert data before cursor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em item} & Data to be stored in list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+If list is empty or cursor is at end of list, item is inserted at the head of list. Otherwise, item is inserted at previous pointer of cursor. Cursor then points to inserted item. 
+\end{DoxyPostcond}
+\hypertarget{classDLList_a2d99aa2cec84f17993ccdc3c7bca315d}{\index{D\-L\-List@{D\-L\-List}!Is\-Empty@{Is\-Empty}}
+\index{Is\-Empty@{Is\-Empty}!DLList@{D\-L\-List}}
+\subsubsection[{Is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf D\-L\-List}$<$ T $>$\-::Is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classDLList_a2d99aa2cec84f17993ccdc3c7bca315d}
+
+
+Check List content. 
+
+\begin{DoxyReturn}{Returns}
+True, if head is N\-U\-L\-L. 
+\end{DoxyReturn}
+\hypertarget{classDLList_a78be8160baa864edcc73f1eb6f50ba0d}{\index{D\-L\-List@{D\-L\-List}!Item@{Item}}
+\index{Item@{Item}!DLList@{D\-L\-List}}
+\subsubsection[{Item}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf D\-L\-List}$<$ T $>$\-::Item (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_a78be8160baa864edcc73f1eb6f50ba0d}
+
+
+Return data. 
+
+\begin{DoxyReturn}{Returns}
+The data pointed to by the cursor node. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+The list is non-\/empty and the cursor is not at the end of list. 
+\end{DoxyPrecond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em int} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classDLList_abab0ba485a340b9c89b66980b766d6a0}{\index{D\-L\-List@{D\-L\-List}!Next@{Next}}
+\index{Next@{Next}!DLList@{D\-L\-List}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf D\-L\-List}$<$ T $>$\-::Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_abab0ba485a340b9c89b66980b766d6a0}
+
+
+Move cursor forward. 
+
+\begin{DoxyPrecond}{Precondition}
+The list is non-\/empty and the cursor is not at the end of list. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The cursor points to next pointer. 
+\end{DoxyPostcond}
+\hypertarget{classDLList_ab992a44d9ea1e6d7c4fa5cf9b8810a96}{\index{D\-L\-List@{D\-L\-List}!Previous@{Previous}}
+\index{Previous@{Previous}!DLList@{D\-L\-List}}
+\subsubsection[{Previous}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf D\-L\-List}$<$ T $>$\-::Previous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDLList_ab992a44d9ea1e6d7c4fa5cf9b8810a96}
+
+
+Move cursor backward. 
+
+\begin{DoxyPrecond}{Precondition}
+The list is non-\/empty and the cursor is not at the end of list. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+The cursor points to previous pointer. 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+D\-L\-List.\-h\end{DoxyCompactItemize}
