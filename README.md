@@ -3,9 +3,7 @@
 Data Structure and Algorithms Coursework in C++ and Java
 
 
-## Structures
-
-The projects consolidated here are 
+## Included Projects
 
 + Percolation: a Java implementation of the union-find algorithm to represent a percolation model.
 + Queues: a standard Java implementation of a FIFO queue algorithm.
@@ -13,6 +11,8 @@ The projects consolidated here are
 + Hashes: a C++ implementation of Symbol Tables hash algorithm.
 + Linked List: a C++ implementation of Dynamically Linked Lists.
 + Quicksort: a standard C++ implementation of quicksort (I enjoyed mergesort more, personally).
+
+More examples or variations on these implementations (e.g., in Python), see my [gists](https://gist.github.com/bryangoodrich)
 
 
 ### Background
